@@ -347,24 +347,24 @@ margin-top:4px;
 =========================== */
 
 .hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:180px;
+    padding-bottom:130px;
 
-padding-top:180px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(15,38,31,.88) 0%,
+            rgba(15,38,31,.68) 45%,
+            rgba(15,38,31,.28) 100%
+        ),
+        url("images/hero-background.jpg");
 
-padding-bottom:130px;
-
-background:
-linear-gradient(
-rgba(23,54,43,.72),
-rgba(23,54,43,.72)
-),
-url("images/hero-background.jpg");
-
-background-size:cover;
-
-background-position:center;
-
-background-repeat:no-repeat;
-
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .hero-grid{
@@ -2508,7 +2508,32 @@ border-color .25s ease;
 
 }
 
+.hero h1{
+    color:#FFFFFF;
+}
 
+.hero h1 span{
+    color:#D7BB84;
+}
+
+.hero-description{
+    color:rgba(255,255,255,.88);
+}
+
+.hero .btn-secondary{
+    color:#FFFFFF;
+    border-color:rgba(255,255,255,.65);
+}
+
+.hero .btn-secondary:hover{
+    background:#FFFFFF;
+    color:var(--green);
+}
+
+.hero-details span{
+    background:rgba(255,255,255,.92);
+    color:var(--green);
+}
 
 
 /* ===========================================================
