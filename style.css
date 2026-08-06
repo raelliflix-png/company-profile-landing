@@ -1543,3 +1543,371 @@ transparent
 );
 
 }
+
+/* ===========================================================
+   PARTE 3B
+   OFFER • FAQ • FOOTER
+===========================================================*/
+
+
+/* ===========================================================
+   OFERTA
+===========================================================*/
+
+.offer{
+
+background:#F8F8F6;
+
+padding:120px 0;
+
+}
+
+.offer-box{
+
+max-width:900px;
+
+margin:auto;
+
+background:linear-gradient(135deg,#17362B,#214838);
+
+border-radius:32px;
+
+padding:70px;
+
+text-align:center;
+
+color:white;
+
+position:relative;
+
+overflow:hidden;
+
+box-shadow:0 35px 80px rgba(0,0,0,.18);
+
+}
+
+.offer-box::before{
+
+content:"";
+
+position:absolute;
+
+width:420px;
+
+height:420px;
+
+background:rgba(198,167,106,.08);
+
+border-radius:50%;
+
+top:-180px;
+
+right:-120px;
+
+}
+
+.offer-box>*{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.offer-box h2{
+
+color:white;
+
+font-size:48px;
+
+margin-bottom:22px;
+
+}
+
+.offer-description{
+
+max-width:640px;
+
+margin:0 auto 40px;
+
+color:rgba(255,255,255,.85);
+
+font-size:19px;
+
+line-height:1.8;
+
+}
+
+.price{
+
+margin:35px 0 45px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:8px;
+
+}
+
+.price-label{
+
+font-size:14px;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+color:#DCC58F;
+
+}
+
+.price strong{
+
+font-size:72px;
+
+font-weight:800;
+
+color:white;
+
+line-height:1;
+
+}
+
+.payment{
+
+font-size:18px;
+
+color:rgba(255,255,255,.72);
+
+}
+
+.purchase-details{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+margin-top:35px;
+
+}
+
+.purchase-details span{
+
+background:rgba(255,255,255,.08);
+
+padding:12px 18px;
+
+border-radius:30px;
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+/* ===========================================================
+   FAQ
+===========================================================*/
+
+.faq{
+
+background:white;
+
+}
+
+.faq-container{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.faq details{
+
+background:#F8F8F6;
+
+border-radius:18px;
+
+padding:24px 30px;
+
+margin-bottom:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+transition:.3s;
+
+}
+
+.faq details:hover{
+
+transform:translateY(-3px);
+
+}
+
+.faq summary{
+
+cursor:pointer;
+
+font-size:18px;
+
+font-weight:700;
+
+color:var(--green);
+
+list-style:none;
+
+position:relative;
+
+padding-right:30px;
+
+}
+
+.faq summary::-webkit-details-marker{
+
+display:none;
+
+}
+
+.faq summary::after{
+
+content:"+";
+
+position:absolute;
+
+right:0;
+
+top:0;
+
+font-size:24px;
+
+font-weight:700;
+
+color:var(--gold);
+
+transition:.3s;
+
+}
+
+.faq details[open] summary::after{
+
+content:"−";
+
+}
+
+.faq details p{
+
+margin-top:18px;
+
+color:#66736E;
+
+line-height:1.8;
+
+font-size:17px;
+
+}
+
+
+
+/* ===========================================================
+   FOOTER
+===========================================================*/
+
+.footer{
+
+background:#17362B;
+
+padding:50px 0;
+
+}
+
+.footer-content{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+.footer-brand .brand-name{
+
+color:white;
+
+}
+
+.footer-brand .brand-subtitle{
+
+color:#DCC58F;
+
+}
+
+.footer p{
+
+color:rgba(255,255,255,.72);
+
+font-size:15px;
+
+}
+
+
+
+/* ===========================================================
+   MICROINTERAÇÕES
+===========================================================*/
+
+.btn{
+
+transition:all .35s ease;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+.gallery-item,
+.problem-card,
+.included-card,
+.step{
+
+transition:all .35s ease;
+
+}
+
+.gallery-item:hover,
+.problem-card:hover,
+.included-card:hover,
+.step:hover{
+
+box-shadow:0 30px 70px rgba(0,0,0,.12);
+
+}
+
+::selection{
+
+background:var(--gold);
+
+color:white;
+
+}
+
+a{
+
+-webkit-tap-highlight-color:transparent;
+
+}
