@@ -379,24 +379,6 @@ align-items:center;
 
 }
 
-.hero h1 span{
-
-   .hero h1,
-.hero p{
-
-color:#FFFFFF;
-
-}
-
-.hero h1 span{
-
-color:#D7BB84;
-
-}
-color:var(--gold);
-
-}
-
 .hero-description{
 
 font-size:21px;
@@ -2534,26 +2516,97 @@ border-color .25s ease;
     background:rgba(255,255,255,.92);
     color:var(--green);
 }
+/* ===========================================================
+   AJUSTE DEFINITIVO DA HERO
+=========================================================== */
 
 .hero{
     min-height:100vh;
     display:flex;
     align-items:center;
+    position:relative;
+    overflow:hidden;
+
     padding-top:180px;
     padding-bottom:130px;
 
     background-image:
         linear-gradient(
             90deg,
-            rgba(23,54,43,.82) 0%,
-            rgba(23,54,43,.64) 45%,
-            rgba(23,54,43,.22) 100%
+            rgba(19,45,36,.88) 0%,
+            rgba(19,45,36,.72) 38%,
+            rgba(19,45,36,.38) 68%,
+            rgba(19,45,36,.12) 100%
         ),
         url("./images/hero-background.jpg");
 
     background-size:cover;
     background-position:center right;
     background-repeat:no-repeat;
+}
+
+.hero-grid{
+    position:relative;
+    z-index:2;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    color:#FFFFFF;
+}
+
+.hero h1 span{
+    color:var(--gold-soft);
+}
+
+.hero-description{
+    color:rgba(255,255,255,.90);
+}
+
+.hero .eyebrow{
+    color:#E2C98E;
+}
+
+.hero .btn-secondary{
+    color:#FFFFFF;
+    border-color:rgba(255,255,255,.70);
+}
+
+.hero .btn-secondary:hover{
+    background:#FFFFFF;
+    color:var(--green-dark);
+    border-color:#FFFFFF;
+}
+
+.hero-details span{
+    background:rgba(255,255,255,.94);
+    color:var(--green-dark);
+}
+
+/* Imagem mais visível em telas menores */
+@media(max-width:1200px){
+    .hero{
+        background-position:65% center;
+    }
+}
+
+@media(max-width:768px){
+    .hero{
+        min-height:auto;
+
+        background-image:
+            linear-gradient(
+                rgba(19,45,36,.82),
+                rgba(19,45,36,.82)
+            ),
+            url("./images/hero-background.jpg");
+
+        background-position:center;
+    }
 }
 /* ===========================================================
    FIM DO ARQUIVO
